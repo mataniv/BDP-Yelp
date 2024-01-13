@@ -1,0 +1,18 @@
+2024-01-09 17:12:15 INFO  Operation directory: /Users/matan/Yelp/dsbulk-1.11.0/bin/logs/LOAD_20240109-171215-660274
+2024-01-09 17:12:40 INFO  Operation LOAD_20240109-171215-660274 completed successfully in 22 seconds.
+2024-01-09 17:12:40 INFO  Records: total: 908,915, successful: 908,915, failed: 0
+2024-01-09 17:12:40 INFO  Batches: total: 908,211, size: 1.00 mean, 1 min, 2 max
+2024-01-09 17:12:40 INFO  Memory usage: used: 237 MB, free: 236 MB, allocated: 474 MB, available: 4,096 MB, total gc count: 71, total gc time: 372 ms
+2024-01-09 17:12:40 INFO  Writes: total: 908,915, successful: 908,915, failed: 0, in-flight: 0
+2024-01-09 17:12:40 INFO  Throughput: 39,358 writes/second
+2024-01-09 17:12:40 INFO  Latencies: mean 2.74, 75p 2.82, 99p 18.35, 999p 50.33 milliseconds
+2024-01-09 17:12:42 INFO  Final stats:
+2024-01-09 17:12:42 INFO  Records: total: 908,915, successful: 908,915, failed: 0
+2024-01-09 17:12:42 INFO  Batches: total: 908,211, size: 1.00 mean, 1 min, 2 max
+2024-01-09 17:12:42 INFO  Memory usage: used: 246 MB, free: 227 MB, allocated: 474 MB, available: 4,096 MB, total gc count: 71, total gc time: 372 ms
+2024-01-09 17:12:42 INFO  Writes: total: 908,915, successful: 908,915, failed: 0, in-flight: 0
+2024-01-09 17:12:42 INFO  Throughput: 36,008 writes/second
+2024-01-09 17:12:42 INFO  Latencies: mean 2.74, 75p 2.82, 99p 18.35, 999p 50.33 milliseconds
+2024-01-09 17:12:42 INFO  Checkpoints for the current operation were written to checkpoint.csv.
+2024-01-09 17:12:42 INFO  To resume the current operation, re-run it with the same settings, and add the following command line flag:
+2024-01-09 17:12:42 INFO  --dsbulk.log.checkpoint.file=/Users/matan/Yelp/dsbulk-1.11.0/bin/logs/LOAD_20240109-171215-660274/checkpoint.csv

@@ -1,0 +1,19 @@
+2024-01-08 20:27:01 INFO  Operation directory: /Users/matan/Yelp/dsbulk-1.11.0/bin/logs/LOAD_20240108-202701-336318
+2024-01-08 20:27:03 WARN  At least 1 record does not match the provided schema.mapping or schema.query. Please check that the connector configuration and the schema configuration are correct.
+2024-01-08 20:27:03 ERROR Operation LOAD_20240108-202701-336318 aborted: Too many errors, the maximum allowed is 100.
+com.datastax.oss.dsbulk.workflow.api.error.TooManyErrorsException: Too many errors, the maximum allowed is 100.
+	at com.datastax.oss.dsbulk.workflow.commons.log.LogManager.maybeTriggerOnError(LogManager.java:1031)
+	at com.datastax.oss.dsbulk.workflow.commons.log.LogManager.lambda$newUnmappableStatementsHandler$6(LogManager.java:314)
+	at com.datastax.oss.dsbulk.connectors.json.JsonConnector$JsonRecordReader.readNext(JsonConnector.java:231) [19 skipped]
+	at com.datastax.oss.dsbulk.workflow.load.LoadWorkflow.execute(LoadWorkflow.java:242) [37 skipped]
+	at com.datastax.oss.dsbulk.runner.WorkflowThread.run(WorkflowThread.java:53)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at com.datastax.oss.dsbulk.workflow.load.LoadWorkflow.execute(LoadWorkflow.java:242) [2 skipped]
+		at com.datastax.oss.dsbulk.runner.WorkflowThread.run(WorkflowThread.java:53)
+		... 2 common frames omitted
+2024-01-08 20:27:05 INFO  Final stats:
+2024-01-08 20:27:05 INFO  Rejected records can be found in the following file(s): mapping.bad
+2024-01-08 20:27:05 INFO  Errors are detailed in the following file(s): mapping-errors.log
+2024-01-08 20:27:05 INFO  Checkpoints for the current operation were written to checkpoint.csv.
+2024-01-08 20:27:05 INFO  To resume the current operation, re-run it with the same settings, and add the following command line flag:
+2024-01-08 20:27:05 INFO  --dsbulk.log.checkpoint.file=/Users/matan/Yelp/dsbulk-1.11.0/bin/logs/LOAD_20240108-202701-336318/checkpoint.csv
